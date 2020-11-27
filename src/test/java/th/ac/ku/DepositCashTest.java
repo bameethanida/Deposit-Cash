@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class DepositCashTest {
 
     @Test
-    void depositLessThan30000ResultShouldBeTrue(){
+    void deposit_Less_Than_30000_Result_Should_Be_True(){
         boolean expectedResult = true;
         float depositCash = 5000.00f;
         Agent agent = new Agent();
@@ -18,7 +18,7 @@ public class DepositCashTest {
     }
 
     @Test
-    void depositEqualTo30000ResultShouldBeTrue(){
+    void deposit_Equal_To_30000_Result_Should_Be_True(){
         boolean expectedResult = true;
         float depositCash = 30000.00f;
         Agent agent = new Agent();
@@ -29,7 +29,7 @@ public class DepositCashTest {
     }
 
     @Test
-    void depositMoreThan30000ResultShouldBeFalse(){
+    void deposit_More_Than_30000_Result_Should_Be_False(){
         boolean expectedResult = false;
         float depositCash = 32000.00f;
         Agent agent = new Agent();
