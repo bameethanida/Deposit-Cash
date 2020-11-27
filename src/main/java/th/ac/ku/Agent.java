@@ -7,6 +7,8 @@ public class Agent {
 
     public static float DepositAmount = 30000.00f;
     public static float MaximumAmount = 50000.00f;
+    public static float MinimumAmount = 100.00f;
+
 
     public boolean checkDepositPerTransaction(float depositCash) {
         if (depositCash <= DepositAmount){
@@ -39,6 +41,13 @@ public class Agent {
 
     public boolean checkMaximumDepositPerDay(float depositMaximumCash) {
         if (depositMaximumCash <= MaximumAmount){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean checkMinimumCashPerTransaction(float depositCash) {
+        if (depositCash >= MinimumAmount){
             return true;
         }
         return false;
