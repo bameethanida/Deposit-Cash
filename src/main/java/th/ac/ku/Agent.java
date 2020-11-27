@@ -39,8 +39,8 @@ public class Agent {
     }
 
 
-    public boolean checkMaximumDepositPerDay(float depositMaximumCash) {
-        if (depositMaximumCash <= MaximumAmount){
+    public boolean checkMaximumDepositPerDay(float depositCash) {
+        if (depositCash <= MaximumAmount){
             return true;
         }
         return false;
